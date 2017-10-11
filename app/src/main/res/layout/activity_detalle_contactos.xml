@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.edwindeleon.org.ejemploandroidagenda.activities.DetalleContactos">
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamañoNombre"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margenes">
+        <ImageView
+            android:id="@+id/imagenMensaje"
+            android:layout_width="@dimen/tamañoNombre"
+            android:layout_height="@dimen/tamañoNombre"
+            android:src="@drawable/icons8_message_filled_50"
+            android:layout_gravity="center_vertical"
+            android:onClick="enviarMensaje"/>
+        <ImageView
+            android:id="@+id/imagenTelefono"
+            android:layout_width="@dimen/tamañoNombre"
+            android:layout_height="@dimen/tamañoNombre"
+            android:layout_marginLeft="@dimen/margenes"
+            android:src="@drawable/icons8_phone_26"
+            android:layout_gravity="center_vertical"
+            android:onClick="llamar"/>
+        <TextView
+            android:id="@+id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margenes"
+            android:layout_gravity="center_vertical"
+            android:onClick="llamar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margenes"
+        android:onClick="enviarCorreo">
+        <ImageView
+            android:id="@+id/imagenCorreo"
+            android:layout_width="@dimen/tamañoNombre"
+            android:layout_height="@dimen/tamañoNombre"
+            android:src="@drawable/icons8_email_50"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margenes"
+            android:text="Hello World!"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-->Margenes linear layout<-->
+    <dimen name="margenes">10dp</dimen>
+
+    <!-->Tamaños letras<-->
+    <dimen name="tamañoNombre">30dp</dimen>
+</resources>
