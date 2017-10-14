@@ -9,11 +9,13 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.edwindeleon.org.ejemploandroidagenda.R;
+import com.edwindeleon.org.ejemploandroidagenda.beans.Contacto;
 
 public class DetalleContactos extends AppCompatActivity {
 
@@ -73,5 +75,14 @@ public class DetalleContactos extends AppCompatActivity {
             startActivity(Intent.createChooser(correoIntent, "Email "));
         }
 
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode == KeyEvent.KEYCODE_BACK){
+            Intent intentContactos = new Intent(this, Contacto.class);
+            startActivity(intentContactos);
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

@@ -47,6 +47,7 @@ public class Contactos extends AppCompatActivity {
                 detalleContacto.putExtra("Telefono", listaContactos.get(i).getTelefono());
                 detalleContacto.putExtra("Correo", listaContactos.get(i).getCorreo());
                 startActivity(detalleContacto);
+                finish();
             }
         });
 
