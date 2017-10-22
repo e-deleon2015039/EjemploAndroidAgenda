@@ -77,6 +77,8 @@ public class DetalleContactos extends AppCompatActivity {
 
     }
 
+    //Codigo para controlar las actividades
+    /*
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if(keyCode == KeyEvent.KEYCODE_BACK){
@@ -85,4 +87,5 @@ public class DetalleContactos extends AppCompatActivity {
         }
         return super.onKeyDown(keyCode, event);
     }
+    */
 }
